@@ -66,7 +66,6 @@ COMPLETION_SCRIPT_ZSH = """
     if [ -n "$completions" ]; then
         compadd -U -V unsorted -a completions
     fi
-    compstate[insert]="automenu"
 }
 
 compdef %(complete_func)s %(script_names)s
